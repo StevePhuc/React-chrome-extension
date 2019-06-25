@@ -5,6 +5,12 @@
   "version": "1.0.1",
   "description": "Helle My name is Steve Phuc",
   "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"] }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "avata.png"
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
